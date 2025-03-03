@@ -25,7 +25,32 @@ def parens_match_iterative(mylist):
     ### TODO
     return iterate(parens_update, 0, mylist) == 0
     ###
+def iterate(f, initial, lst):
+    result = initial
+    for item in lst:
+        result = f(result, item)
+    return result
+def plus(x, y):
+        return x + y
 
+def paren_map(x):
+    if x == '(':
+        return 1
+    elif x == ')':
+        return -1
+    else:
+        return 0
+
+def min_f(x, y):
+    if x < y:
+        return x
+    return y
+
+def reduce(f, id_, lst):
+    result = id_
+    for item in lst:
+        result = f(result, item)
+    return result
 
 def parens_update(current_output, next_input):
     """
@@ -77,8 +102,17 @@ def parens_match_scan(mylist):
     
     """
     ###TODO
+
     history, last = scan(plus, 0, list(map(paren_map, mylist)))
     return last == 0 and reduce(min_f, 0, history) >= 0
+
+
+
+
+
+
+
+
     ###
 
 def scan(f, id_, a):
@@ -148,6 +182,7 @@ def parens_match_dc_helper(mylist):
       L is the number of unmatched left parentheses. This output is used by 
       parens_match_dc to return the final True or False value
     """
+    
     ###TODO
     # Base cases
     if len(mylist) == 0:
