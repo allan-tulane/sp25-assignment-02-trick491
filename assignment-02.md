@@ -15,18 +15,18 @@ and push to your github repository.
 Derive asymptotic upper bounds of work for each recurrence below.
 
 * $W(n)=2W(n/3)+1$
-.  
-.  
-. 
+.  a = 2; b = 3; f(n) = O(1)
+.  C = 0 < log3(2) Case 1
+.  W(n) = O(n^(log3(2)))
 .  
 . 
 .  
 . 
  
 * $W(n)=5W(n/4)+n$
-.  
-.
-.  
+.  a = 5; b = 4; f(n) = O(n)
+.  C = 1 > log4(5) Case 1
+.  W(n) = O(n^log4(5)
 . 
 .  
 . 
@@ -35,18 +35,18 @@ Derive asymptotic upper bounds of work for each recurrence below.
 . 
 
 * $W(n)=7W(n/7)+n$
-.  
-. 
-.  
+.  a = 7; b = 7; f(n) = n
+.  C = 1 = log7(7) Case 2
+.  W(n) = O(nlog(n))
 .  
 . 
 .  
 .
 
 * $W(n)=9W(n/3)+n^2$
-.  
-.
-. 
+.  a = 9; b = 3; f(n) = n^2
+.  C = 2 = log3(9) Case 2
+.  W(n) = O(n^2*log(n))
 .  
 . 
 .  
@@ -55,9 +55,9 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .
 
 * $W(n)=8W(n/2)+n^3$
-.  
-.
-.  
+.  a = 8; b = 2; f(n) = O(n^3)
+.  C = 3 = log2(8) Case 2 
+.  W(n) = O(m^3 * log(n))
 .  
 .  
 .  
@@ -67,9 +67,9 @@ Derive asymptotic upper bounds of work for each recurrence below.
 
 
 * $W(n)=49W(n/25)+n^{3/2}\log n$
-.  
-.  
-. 
+.  a = 49, b = 25 = f(n) = o(n^(3/2) * log(n)
+.  c = 3/2 > log25(49) Case 3
+.  W(n) = O(N^3 * log(n)) 
 .  
 . 
 .  
@@ -77,29 +77,29 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 
 * $W(n)=W(n-1)+2$
-.  
-.  
-. 
-.  
+.  W(1) = C 
+.  W(n - 1) = W(n - 2) + 2;  W(n) = (for k in range(n): C = C + k^C)
+.  W(n - 2) = W(n - 3) + 2; W(n) = C + 2n 
+.  W(n) = O(n)
 . 
 .  
 .  
 .  
 
 * $W(n)= W(n-1)+n^c$, with $c\geq 1$
-.  
-.  
-.  
-.  
+.  W(1) = C
+.  W(n - 1) = W(n - 2) + (n - 1)^C; W(n) = for k in range(n): C = C + k^C
+.  W(n - 2) = W(n - 3) + (n - 2)^C 
+.  W(n) = O(n^(C+1))
 .  
 . 
 .  
 . 
 
 * $W(n)=W(\sqrt{n})+1$
-.  
-.  
-.  
+.  W(sqrt(n)) = W(sqrt(sqrt(n)) + 1
+.  Depth: log(log(n))
+.  W(n) = O(log(log(n))
 .  
 .  
 . 
@@ -127,9 +127,9 @@ Suppose that for a given task you are choosing between the following three algor
     Which algorithm would you choose?
 
 
-.  
-.  
-.  
+.  A: T(n) = 5 * T(n/2) + O(n)
+.     a = 5
+.     
 .  
 . 
 . 
