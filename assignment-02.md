@@ -67,9 +67,9 @@ Derive asymptotic upper bounds of work for each recurrence below.
 
 
 * $W(n)=49W(n/25)+n^{3/2}\log n$
-.  a = 49, b = 25 = f(n) = o(n^(3/2) * log(n)
-.  c = 3/2 > log25(49) Case 3
-.  W(n) = O(N^3 * log(n)) 
+* a = 49, b = 25 = f(n) = o(n^(3/2) * log(n)
+* c = 3/2 > log25(49) Case 3
+* W(n) = O(N^3 * log(n)) 
 .  
 . 
 .  
@@ -77,29 +77,29 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .  
 
 * $W(n)=W(n-1)+2$
-.  W(1) = C 
-.  W(n - 1) = W(n - 2) + 2;  W(n) = (for k in range(n): C = C + k^C)
-.  W(n - 2) = W(n - 3) + 2; W(n) = C + 2n 
-.  W(n) = O(n)
+* W(1) = C
+* W(n - 1) = W(n - 2) + 2;  W(n) = (for k in range(n): C = C + k^C)
+* W(n - 2) = W(n - 3) + 2; W(n) = C + 2n
+* W(n) = O(n)
 . 
 .  
 .  
 .  
 
 * $W(n)= W(n-1)+n^c$, with $c\geq 1$
-.  W(1) = C
-.  W(n - 1) = W(n - 2) + (n - 1)^C; W(n) = for k in range(n): C = C + k^C
-.  W(n - 2) = W(n - 3) + (n - 2)^C 
-.  W(n) = O(n^(C+1))
+* W(1) = C
+* W(n - 1) = W(n - 2) + (n - 1)^C; W(n) = for k in range(n): C = C + k^C
+* W(n - 2) = W(n - 3) + (n - 2)^C
+* W(n) = O(n^(C+1))
 .  
 . 
 .  
 . 
 
 * $W(n)=W(\sqrt{n})+1$
-.  W(sqrt(n)) = W(sqrt(sqrt(n)) + 1
-.  Depth: log(log(n))
-.  W(n) = O(log(log(n))
+* W(sqrt(n)) = W(sqrt(sqrt(n)) + 1
+* Depth: log(log(n))
+* W(n) = O(log(log(n))
 .  
 .  
 . 
@@ -127,12 +127,18 @@ Suppose that for a given task you are choosing between the following three algor
     Which algorithm would you choose?
 
 
-.  A: T(n) = 5 * T(n/2) + O(n)
-.     a = 5
-.     
+A: T(n) = 5 * T(n/2) + O(n)
+   a = 5; b = 2; f(n) = O(n)
+   C = 1 < log2(5) Case 1
+   Complexity = O(n^log2(5))
 .  
+B: T(n) = 2 * T(n - 1) + O(1)
+   Complexity = O(2^n)
 . 
-. 
+C: T(n) = 9 * T(n/3) + O(n^2)
+   a = 9; b = 3; f(n) = O(n^2)
+   C = 2 < log3(9) Case 2
+   Complexity = O(n^2*log(n))
 
 
 
