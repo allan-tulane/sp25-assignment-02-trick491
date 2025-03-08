@@ -168,15 +168,13 @@ Below, we'll solve this problem three different ways, using iterate, scan, and d
 
 **enter answer here**
 
-.  
-. 
+* Work: O(n)
+* Span: O(n)
 
 
 
 **3c. scan solution** Implement `parens_match_scan` a solution to this problem using `scan`. **Hint**: We have given you the function `paren_map` which maps `(` to `1`, `)` to `-1` and everything else to `0`. How can you pass this function to `scan` to solve the problem? You may also find the `min_f` function useful here. Implement `parens_match_scan` and test with `test_parens_match_scan`
 
-.  
-. 
 
 
 
@@ -184,8 +182,9 @@ Below, we'll solve this problem three different ways, using iterate, scan, and d
 
 **enter answer here**
 
-.  
-.  
+* Work: O(n)
+* Span: O(log(n))
+*   
 
 
 
@@ -205,8 +204,9 @@ Below, we'll solve this problem three different ways, using iterate, scan, and d
 
 **enter answer here**
 
-.  
-. 
+* Work: O(n)
+* Span: O(log(n))
+* Big oh: every element must be passed, work is O(n), span is O(log(n)) for divide and conquer
 
 
  
