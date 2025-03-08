@@ -127,18 +127,18 @@ Suppose that for a given task you are choosing between the following three algor
     Which algorithm would you choose?
 
 
-A: T(n) = 5 * T(n/2) + O(n)
-   a = 5; b = 2; f(n) = O(n)
-   C = 1 < log2(5) Case 1
-   Complexity = O(n^log2(5))
-.  
-B: T(n) = 2 * T(n - 1) + O(1)
-   Complexity = O(2^n)
-. 
-C: T(n) = 9 * T(n/3) + O(n^2)
-   a = 9; b = 3; f(n) = O(n^2)
-   C = 2 < log3(9) Case 2
-   Complexity = O(n^2*log(n))
+  * A: T(n) = 5 * T(n/2) + O(n)
+  * a = 5; b = 2; f(n) = O(n)
+  * C = 1 < log2(5) Case 1
+  * Complexity = O(n^log2(5))
+  * 
+  * B: T(n) = 2 * T(n - 1) + O(1)
+  * Complexity = O(2^n)
+  *
+  * C: T(n) = 9 * T(n/3) + O(n^2)
+  * a = 9; b = 3; f(n) = O(n^2)
+  * C = 2 < log3(9) Case 2
+  * Complexity = O(n^2*log(n))
 
 
 
