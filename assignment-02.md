@@ -15,18 +15,18 @@ and push to your github repository.
 Derive asymptotic upper bounds of work for each recurrence below.
 
 * $W(n)=2W(n/3)+1$
-.  a = 2; b = 3; f(n) = O(1)
-.  C = 0 < log3(2) Case 1
-.  W(n) = O(n^(log3(2)))
+* a = 2; b = 3; f(n) = O(1)
+* C = 0 < log3(2) Case 1
+* W(n) = O(n^(log3(2)))
 .  
 . 
 .  
 . 
  
 * $W(n)=5W(n/4)+n$
-.  a = 5; b = 4; f(n) = O(n)
-.  C = 1 > log4(5) Case 1
-.  W(n) = O(n^log4(5)
+*  a = 5; b = 4; f(n) = O(n)
+*  c = 1 > log4(5) Case 1
+*  W(n) = O(n^log4(5)
 . 
 .  
 . 
@@ -35,18 +35,18 @@ Derive asymptotic upper bounds of work for each recurrence below.
 . 
 
 * $W(n)=7W(n/7)+n$
-.  a = 7; b = 7; f(n) = n
-.  C = 1 = log7(7) Case 2
-.  W(n) = O(nlog(n))
+* a = 7; b = 7; f(n) = n
+* C = 1 = log7(7) Case 2
+* W(n) = O(nlog(n))
 .  
 . 
 .  
 .
 
 * $W(n)=9W(n/3)+n^2$
-.  a = 9; b = 3; f(n) = n^2
-.  C = 2 = log3(9) Case 2
-.  W(n) = O(n^2*log(n))
+* a = 9; b = 3; f(n) = n^2
+* C = 2 = log3(9) Case 2
+* W(n) = O(n^2*log(n))
 .  
 . 
 .  
@@ -55,9 +55,9 @@ Derive asymptotic upper bounds of work for each recurrence below.
 .
 
 * $W(n)=8W(n/2)+n^3$
-.  a = 8; b = 2; f(n) = O(n^3)
-.  C = 3 = log2(8) Case 2 
-.  W(n) = O(m^3 * log(n))
+* a = 8; b = 2; f(n) = O(n^3)
+* C = 3 = log2(8) Case 2
+* W(n) = O(m^3 * log(n))
 .  
 .  
 .  
